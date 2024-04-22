@@ -86,11 +86,17 @@ public class Pendu {
             this.afficheLettresSaisies();
             
             System.out.print("tapez une lettre > ");
-            char lettre = scan.nextLine().charAt(0);
+
+            String entreeUtilisateur = scan.nextLine();
+
+            //On vérifie que l'entrée n'est pas vide
+            while (entreeUtilisateur.isEmpty()) {
+                entreeUtilisateur = scan.nextLine();
+            }
+
+            char lettre = entreeUtilisateur.charAt(0);
             
             System.out.println();
-
-            
 
             //Si la lettre à déjà été saisie auparavant
             while (this.listeLettresSaisies.contains(lettre)) {
