@@ -15,7 +15,7 @@ Le jeu utilise une liste de mots stockée dans un fichier texte pour le mode sol
 - Java JDK 11 ou supérieur
 
 ## Installation
-- Compiler les fichiers sources Pendu.java ainsi que Jeu.java avec la commande : javac [fichier à compiler]
+- Compiler les fichiers sources Pendu.java ainsi que Jeu.java avec la commande : javac *.java
 - Éxécutez la commande : java Jeu
 
 ## Contact
